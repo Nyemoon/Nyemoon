@@ -1,21 +1,21 @@
-```
+```YAML
 nyemoon@github ~ [session: active]
 ```
 
-```
+```bash
 $ whoami
 ```
 
-```
+```YAML
 Ketlyn Barbosa · alias: Nyemoon · Frontend Developer & Software Engineering Student
 "As trevas não prevalecem sobre as luas — nascem do escuro e iluminam tudo ao redor."
 ```
 
-```
+```bash
 $ cat skills.conf
 ```
 
-```
+```ini
 [focus & roles]              Frontend UI/UX · Responsive Design · Open-Source Collaborations
 [languages]                  JavaScript (ES6+) · HTML5 · CSS3 · Python
 [frameworks & libraries]     React · Vue · Vite · Bootstrap
@@ -23,11 +23,11 @@ $ cat skills.conf
 [tools & devops]             Git & GitHub · VS Code · Linux / Bash Terminal
 ```
 
-```
+```bash
 $ cat phase.sh --progress
 ```
 
-```
+```YAML
 🌑 [Node.js / SQL]           ████░░░░░░░░░░ 25% (lua nova)
 🌑 [Python]                  █████░░░░░░░░░ 35% (lua nova)
 🌒 [Vue / Vite]              ████████░░░░░░ 50% (crescente)
@@ -36,7 +36,7 @@ $ cat phase.sh --progress
 🌓 [HTML / CSS]              ████████████░░ 85% (quarto crescente)
 ```
 
-```
+```bash
 $ _
 ```
 
