@@ -27,8 +27,9 @@ $ cat skills.conf
 $ cat phase.sh --progress
 ```
 
-<img src="./assets/moon-phases-bars.svg" alt="moon phases" />
-
+<p align="center">
+  <img src="./assets/moon-phases-bars-final.svg" alt="moon phases" width="100%" />
+</p>
 
 ```bash
 $ _
