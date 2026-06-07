@@ -1,0 +1,138 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <defs>
+    <style>
+      .bar-nodejs  { animation: fill-25  1.4s cubic-bezier(0.4,0,0.2,1) 0.2s  both; }
+      .bar-python  { animation: fill-35  1.4s cubic-bezier(0.4,0,0.2,1) 0.35s both; }
+      .bar-vue     { animation: fill-50  1.4s cubic-bezier(0.4,0,0.2,1) 0.5s  both; }
+      .bar-react   { animation: fill-65  1.4s cubic-bezier(0.4,0,0.2,1) 0.65s both; }
+      .bar-js      { animation: fill-75  1.4s cubic-bezier(0.4,0,0.2,1) 0.8s  both; }
+      .bar-html    { animation: fill-85  1.4s cubic-bezier(0.4,0,0.2,1) 0.95s both; }
+
+      @keyframes fill-25  { from { width: 0 } to { width: 94px  } }
+      @keyframes fill-35  { from { width: 0 } to { width: 132px } }
+      @keyframes fill-50  { from { width: 0 } to { width: 188px } }
+      @keyframes fill-65  { from { width: 0 } to { width: 244px } }
+      @keyframes fill-75  { from { width: 0 } to { width: 282px } }
+      @keyframes fill-85  { from { width: 0 } to { width: 320px } }
+
+      .dot { animation: dot-pop 0.25s cubic-bezier(0.4,0,0.2,1) both; }
+      .dot-nodejs { animation-delay: 1.55s; }
+      .dot-python { animation-delay: 1.7s;  }
+      .dot-vue    { animation-delay: 1.85s; }
+      .dot-react  { animation-delay: 2s;    }
+      .dot-js     { animation-delay: 2.15s; }
+      .dot-html   { animation-delay: 2.3s;  }
+
+      @keyframes dot-pop {
+        from { r: 0; opacity: 0; }
+        to   { r: 4.5; opacity: 1; }
+      }
+
+      .fi { animation: fade-in 0.4s ease both; }
+      @keyframes fade-in { from { opacity:0 } to { opacity:1 } }
+    </style>
+
+    <linearGradient id="gNova" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#3C3489"/>
+      <stop offset="100%" stop-color="#7F77DD"/>
+    </linearGradient>
+    <linearGradient id="gCresc" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#085041"/>
+      <stop offset="100%" stop-color="#1D9E75"/>
+    </linearGradient>
+    <linearGradient id="gQuarto" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#534AB7"/>
+      <stop offset="100%" stop-color="#c4b0f0"/>
+    </linearGradient>
+
+    <clipPath id="cp-nodejs"> <rect width="376" height="6" rx="3"/> </clipPath>
+    <clipPath id="cp-python"> <rect width="376" height="6" rx="3"/> </clipPath>
+    <clipPath id="cp-vue">    <rect width="376" height="6" rx="3"/> </clipPath>
+    <clipPath id="cp-react">  <rect width="376" height="6" rx="3"/> </clipPath>
+    <clipPath id="cp-js">     <rect width="376" height="6" rx="3"/> </clipPath>
+    <clipPath id="cp-html">   <rect width="376" height="6" rx="3"/> </clipPath>
+  </defs>
+
+  <!-- fundo -->
+  <rect width="600" height="300" rx="10" fill="#12101c"/>
+  <rect width="600" height="300" rx="10" fill="none" stroke="#2e2a45" stroke-width="0.5"/>
+
+  <!-- ── LUA NOVA ── -->
+  <text x="22" y="30" font-size="13" class="fi" style="animation-delay:.1s">🌑</text>
+  <text x="40" y="30" font-family="monospace" font-size="10" fill="#4e4a62" letter-spacing="1.5" class="fi" style="animation-delay:.1s">LUA NOVA</text>
+  <line x1="22" y1="36" x2="578" y2="36" stroke="#1e1b2e" stroke-width="0.5"/>
+
+  <!-- Node.js / SQL -->
+  <text x="22"  y="58" font-size="12" class="fi" style="animation-delay:.18s">🌑</text>
+  <text x="40"  y="58" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.18s">[Node.js / SQL]</text>
+  <rect x="196" y="52" width="376" height="6" rx="3" fill="#1e1b2e"/>
+  <g clip-path="url(#cp-nodejs)" transform="translate(196,52)">
+    <rect class="bar-nodejs" x="0" y="0" width="0" height="6" fill="url(#gNova)" rx="3"/>
+  </g>
+  <circle class="dot dot-nodejs" cx="290" cy="55" r="0" fill="#7F77DD"/>
+  <text x="580" y="59" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.18s">25%</text>
+
+  <!-- Python -->
+  <text x="22"  y="82" font-size="12" class="fi" style="animation-delay:.33s">🌑</text>
+  <text x="40"  y="82" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.33s">[Python]</text>
+  <rect x="196" y="76" width="376" height="6" rx="3" fill="#1e1b2e"/>
+  <g clip-path="url(#cp-python)" transform="translate(196,76)">
+    <rect class="bar-python" x="0" y="0" width="0" height="6" fill="url(#gNova)" rx="3"/>
+  </g>
+  <circle class="dot dot-python" cx="328" cy="79" r="0" fill="#7F77DD"/>
+  <text x="580" y="83" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.33s">35%</text>
+
+  <!-- ── CRESCENTE ── -->
+  <text x="22" y="112" font-size="13" class="fi" style="animation-delay:.46s">🌒</text>
+  <text x="40" y="112" font-family="monospace" font-size="10" fill="#4e4a62" letter-spacing="1.5" class="fi" style="animation-delay:.46s">CRESCENTE</text>
+  <line x1="22" y1="118" x2="578" y2="118" stroke="#1e1b2e" stroke-width="0.5"/>
+
+  <!-- Vue / Vite -->
+  <text x="22"  y="140" font-size="12" class="fi" style="animation-delay:.48s">🌒</text>
+  <text x="40"  y="140" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.48s">[Vue / Vite]</text>
+  <rect x="196" y="134" width="376" height="6" rx="3" fill="#1e1b2e"/>
+  <g clip-path="url(#cp-vue)" transform="translate(196,134)">
+    <rect class="bar-vue" x="0" y="0" width="0" height="6" fill="url(#gCresc)" rx="3"/>
+  </g>
+  <circle class="dot dot-vue" cx="384" cy="137" r="0" fill="#1D9E75"/>
+  <text x="580" y="141" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.48s">50%</text>
+
+  <!-- React -->
+  <text x="22"  y="164" font-size="12" class="fi" style="animation-delay:.63s">🌒</text>
+  <text x="40"  y="164" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.63s">[React]</text>
+  <rect x="196" y="158" width="376" height="6" rx="3" fill="#1e1b2e"/>
+  <g clip-path="url(#cp-react)" transform="translate(196,158)">
+    <rect class="bar-react" x="0" y="0" width="0" height="6" fill="url(#gCresc)" rx="3"/>
+  </g>
+  <circle class="dot dot-react" cx="440" cy="161" r="0" fill="#1D9E75"/>
+  <text x="580" y="165" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.63s">65%</text>
+
+  <!-- JavaScript -->
+  <text x="22"  y="188" font-size="12" class="fi" style="animation-delay:.78s">🌒</text>
+  <text x="40"  y="188" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.78s">[JavaScript]</text>
+  <rect x="196" y="182" width="376" height="6" rx="3" fill="#1e1b2e"/>
+  <g clip-path="url(#cp-js)" transform="translate(196,182)">
+    <rect class="bar-js" x="0" y="0" width="0" height="6" fill="url(#gCresc)" rx="3"/>
+  </g>
+  <circle class="dot dot-js" cx="478" cy="185" r="0" fill="#1D9E75"/>
+  <text x="580" y="189" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.78s">75%</text>
+
+  <!-- ── QUARTO CRESCENTE ── -->
+  <text x="22" y="218" font-size="13" class="fi" style="animation-delay:.91s">🌓</text>
+  <text x="40" y="218" font-family="monospace" font-size="10" fill="#4e4a62" letter-spacing="1.5" class="fi" style="animation-delay:.91s">QUARTO CRESCENTE</text>
+  <line x1="22" y1="224" x2="578" y2="224" stroke="#1e1b2e" stroke-width="0.5"/>
+
+  <!-- HTML / CSS -->
+  <text x="22"  y="246" font-size="12" class="fi" style="animation-delay:.93s">🌓</text>
+  <text x="40"  y="246" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.93s">[HTML / CSS]</text>
+  <rect x="196" y="240" width="376" height="6" rx="3" fill="#1e1b2e"/>
+  <g clip-path="url(#cp-html)" transform="translate(196,240)">
+    <rect class="bar-html" x="0" y="0" width="0" height="6" fill="url(#gQuarto)" rx="3"/>
+  </g>
+  <circle class="dot dot-html" cx="516" cy="243" r="0" fill="#c4b0f0"/>
+  <text x="580" y="247" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.93s">85%</text>
+
+  <!-- rodapé sutil -->
+  <line x1="22" y1="268" x2="578" y2="268" stroke="#1e1b2e" stroke-width="0.5"/>
+  <text x="300" y="286" font-family="monospace" font-size="10" fill="#2e2a45" text-anchor="middle">✦ lua nova — nasce do escuro, cresce para a luz ✦</text>
+</svg>

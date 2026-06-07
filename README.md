@@ -27,14 +27,8 @@ $ cat skills.conf
 $ cat phase.sh --progress
 ```
 
-```YAML
-🌑 [Node.js / SQL]           ████░░░░░░░░░░ 25% (lua nova)
-🌑 [Python]                  █████░░░░░░░░░ 35% (lua nova)
-🌒 [Vue / Vite]              ████████░░░░░░ 50% (crescente)
-🌒 [React]                   ██████████░░░░ 65% (crescente)
-🌒 [JavaScript]              ███████████░░░ 75% (crescente)
-🌓 [HTML / CSS]              ████████████░░ 85% (quarto crescente)
-```
+<img src="./assets/moon-phases-bars.svg" alt="moon phases" />
+
 
 ```bash
 $ _
