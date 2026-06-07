@@ -28,7 +28,7 @@ $ cat phase.sh --progress
 ```
 
 <p align="center">
-  <img src="./assets/moon-phases-bars-final.svg" alt="moon phases" width="100%" />
+  <img src="./assets/moon-phases-bars-740.svg" alt="moon phases" />
 </p>
 
 ```bash
@@ -49,10 +49,4 @@ $ _
   <a href="mailto:ketlynbarbosa783@gmail.com">
     <img src="https://img.shields.io/badge/-Gmail-e7dfff?style=for-the-badge&logo=gmail&logoColor=4a2a9a&labelColor=d8ccff"/>
   </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <sub>✦ lua nova — nasce do escuro, cresce para a luz ✦</sub>
 </div>
