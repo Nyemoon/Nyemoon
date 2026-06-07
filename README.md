@@ -1,80 +1,116 @@
 <div align="center">
 
-<!-- Header animado -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6C63FF&height=120&section=header"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6C63FF,bcaaf5,e7dfff&height=160&section=header&text=Nyemoon&fontColor=2a1260&fontSize=38&fontAlignY=62&desc=✦+lua+nova+✦&descAlignY=82&descSize=14&animation=fadeIn"/>
 
-## Hey! 👋 I'm Ketlyn Barbosa
+<br/>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=420&lines=Full+Stack+Developer;CS+Student;Always+learning+something+new" alt="Typing SVG" />
-</a>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 
-<p>
-  <a href="https://www.linkedin.com/in/ketlyn-barbosa-a995833aa?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  &nbsp;
-  <a href="https://github.com/Nyemoon" target="_blank">
-    <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  &nbsp;
-  <a href="mailto:ketlynbarbosa783@gmail.com">
-    <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-</p>
+  <defs>
+    <radialGradient id="moonGrad" cx="35%" cy="30%">
+      <stop offset="0%" stop-color="#c8b0ff"/>
+      <stop offset="50%" stop-color="#8b6fff"/>
+      <stop offset="100%" stop-color="#5e35d0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#b090e0" stroke-width="0.6" opacity="0.4"/>
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#c0a8f0" stroke-width="0.4" stroke-dasharray="3 6" opacity="0.5"/>
+  <circle cx="50" cy="50" r="31" fill="url(#moonGrad)" stroke="#c4b0ff" stroke-width="0.9"/>
+  <circle cx="39" cy="41" r="6" fill="rgba(80,40,160,0.22)"/>
+  <circle cx="56" cy="56" r="3.5" fill="rgba(80,40,160,0.16)"/>
+  <circle cx="42" cy="58" r="2.2" fill="rgba(80,40,160,0.12)"/>
+
+</svg>
+
+<br/>
+
+# Ketlyn Barbosa
+
+### `alias` *Nyemoon* — lua nova
+
+> *As trevas não prevalecem sobre aqueles que são luas —*
+> *nascem do escuro e iluminam tudo ao redor.*
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-e7dfff?style=for-the-badge&logo=linkedin&logoColor=4a2a9a&labelColor=d8ccff)](https://www.linkedin.com/in/ketlyn-barbosa-a995833aa)
+
+&nbsp;
+
+[![GitHub](https://img.shields.io/badge/-GitHub-e7dfff?style=for-the-badge&logo=github&logoColor=4a2a9a&labelColor=d8ccff)](https://github.com/Nyemoon)
+
+&nbsp;
+
+[![Gmail](https://img.shields.io/badge/-Gmail-e7dfff?style=for-the-badge&logo=gmail&logoColor=4a2a9a&labelColor=d8ccff)](mailto:ketlynbarbosa783@gmail.com)
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<br/>
+
+---
+
+## `$ cat about.md`
+
+```json
+
+{
+  "role"     : "Frontend Developer & Software Engineering Student",
+  "focus"    : "crafting intuitive and responsive user interfaces",
+  "learning" : "Node.js & Python to bridge the gap to Full-Stack",
+  "open_to"  : "frontend and full-stack open-source collaborations"
+
+}
+
+```
 
 <br/>
 
-## <img src="https://media1.tenor.com/m/8Qe-X9v5nZsAAAAC/parrot-cockatiel.gif" width="30"> About Me
+---
 
-I'm a Computer Science student passionate about building things with code — from user interfaces to backend systems.
+## `$ cat skills.sh`
 
--  Working on **personal projects**
--  Learning **Cloud & DevOps**
--  Open to collaborating on **open source projects**
--  Ask me about **React, Node.js, Python, C++**
+> 🌑 lua nova → 🌒 crescente → 🌓 quarto → 🌕 cheia
+
+| Skill | Fase | Progresso |
+
+| :--- | :---: | :--- |
+
+| HTML / CSS    | 🌓 | `████████████░░` 85% |
+
+| JavaScript    | 🌒 | `███████████░░░` 75% |
+
+| React         | 🌒 | `██████████░░░░` 65% |
+
+| Vue / Vite    | 🌒 | `████████░░░░░░` 50% |
+
+| Python        | 🌑 | `█████░░░░░░░░░` 35% |
+
+| Node.js / SQL | 🌑 | `████░░░░░░░░░░` 25% |
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+---
 
-<br/>
-
-## Tech Stack
+## `$ ls tech-stack/`
 
 <div align="center">
 
-#### Languages
-<p>
-  <img src="https://skillicons.dev/icons?i=cpp,c,js,ts,python" />
-</p>
-
-#### Frontend
-<p>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap" />
-</p>
-
-#### Backend & Databases
-<p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,django,postgres,mongodb" />
-</p>
-
-#### Tools
-<p>
-  <img src="https://skillicons.dev/icons?i=docker,git,github,linux,vscode" />
-</p>
+<img src="https://skillicons.dev/icons?i=html,css,js,react,vue,vite,bootstrap,nodejs,mysql,python,git,vscode&theme=light&perline=6"/>
 
 </div>
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+---
 
-<br/>
+<div align="center">
 
-<!-- Footer -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6C63FF&height=120&section=footer"/>
+`✦ lua nova — nasce do escuro, cresce para a luz ✦`
+
+<br/><br/>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6C63FF,bcaaf5,e7dfff&height=130&section=footer&reversal=true"/>
+
+</div>
+
