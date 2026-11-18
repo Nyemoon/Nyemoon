@@ -1,138 +1,109 @@
-<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="740" height="300">
+<svg viewBox="0 0 740 444" width="740" height="444" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Níveis de habilidades em fases da lua" xmlns:c2pa="http://c2pa.org/manifest">
   <defs>
     <style>
-      .bar-nodejs  { animation: fill-25  1.4s cubic-bezier(0.4,0,0.2,1) 0.2s  both; }
-      .bar-python  { animation: fill-35  1.4s cubic-bezier(0.4,0,0.2,1) 0.35s both; }
-      .bar-vue     { animation: fill-50  1.4s cubic-bezier(0.4,0,0.2,1) 0.5s  both; }
-      .bar-react   { animation: fill-65  1.4s cubic-bezier(0.4,0,0.2,1) 0.65s both; }
-      .bar-js      { animation: fill-75  1.4s cubic-bezier(0.4,0,0.2,1) 0.8s  both; }
-      .bar-html    { animation: fill-85  1.4s cubic-bezier(0.4,0,0.2,1) 0.95s both; }
-
-      @keyframes fill-25  { from { width: 0 } to { width: 94px  } }
-      @keyframes fill-35  { from { width: 0 } to { width: 132px } }
-      @keyframes fill-50  { from { width: 0 } to { width: 188px } }
-      @keyframes fill-65  { from { width: 0 } to { width: 244px } }
-      @keyframes fill-75  { from { width: 0 } to { width: 282px } }
-      @keyframes fill-85  { from { width: 0 } to { width: 320px } }
-
-      .dot { animation: dot-pop 0.25s cubic-bezier(0.4,0,0.2,1) both; }
-      .dot-nodejs { animation-delay: 1.55s; }
-      .dot-python { animation-delay: 1.7s;  }
-      .dot-vue    { animation-delay: 1.85s; }
-      .dot-react  { animation-delay: 2s;    }
-      .dot-js     { animation-delay: 2.15s; }
-      .dot-html   { animation-delay: 2.3s;  }
-
-      @keyframes dot-pop {
-        from { r: 0; opacity: 0; }
-        to   { r: 4.5; opacity: 1; }
-      }
-
-      .fi { animation: fade-in 0.4s ease both; }
-      @keyframes fade-in { from { opacity:0 } to { opacity:1 } }
+      .b1{animation:f1 1.3s cubic-bezier(.4,0,.2,1) 0.22s both}@keyframes f1{from{width:0}to{width:95px}}
+      .b2{animation:f2 1.3s cubic-bezier(.4,0,.2,1) 0.34s both}@keyframes f2{from{width:0}to{width:114px}}
+      .b3{animation:f3 1.3s cubic-bezier(.4,0,.2,1) 0.46s both}@keyframes f3{from{width:0}to{width:133px}}
+      .b4{animation:f4 1.3s cubic-bezier(.4,0,.2,1) 0.58s both}@keyframes f4{from{width:0}to{width:190px}}
+      .b5{animation:f5 1.3s cubic-bezier(.4,0,.2,1) 0.70s both}@keyframes f5{from{width:0}to{width:209px}}
+      .b6{animation:f6 1.3s cubic-bezier(.4,0,.2,1) 0.82s both}@keyframes f6{from{width:0}to{width:228px}}
+      .b7{animation:f7 1.3s cubic-bezier(.4,0,.2,1) 0.94s both}@keyframes f7{from{width:0}to{width:247px}}
+      .b8{animation:f8 1.3s cubic-bezier(.4,0,.2,1) 1.06s both}@keyframes f8{from{width:0}to{width:247px}}
+      .b9{animation:f9 1.3s cubic-bezier(.4,0,.2,1) 1.18s both}@keyframes f9{from{width:0}to{width:285px}}
+      .b10{animation:f10 1.3s cubic-bezier(.4,0,.2,1) 1.30s both}@keyframes f10{from{width:0}to{width:304px}}
+      .b11{animation:f11 1.3s cubic-bezier(.4,0,.2,1) 1.42s both}@keyframes f11{from{width:0}to{width:323px}}
+      .dot{animation:dot-pop .25s cubic-bezier(.4,0,.2,1) both}
+      @keyframes dot-pop{from{r:0;opacity:0}to{r:4.5;opacity:1}}
+      .fi{animation:fade-in .4s ease both}
+      @keyframes fade-in{from{opacity:0}to{opacity:1}}
     </style>
-
     <linearGradient id="gNova" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#3C3489"/>
-      <stop offset="100%" stop-color="#7F77DD"/>
+      <stop offset="0%" stop-color="#3C3489"/><stop offset="100%" stop-color="#7F77DD"/>
     </linearGradient>
     <linearGradient id="gCresc" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#085041"/>
-      <stop offset="100%" stop-color="#1D9E75"/>
+      <stop offset="0%" stop-color="#085041"/><stop offset="100%" stop-color="#1D9E75"/>
     </linearGradient>
     <linearGradient id="gQuarto" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#534AB7"/>
-      <stop offset="100%" stop-color="#c4b0f0"/>
+      <stop offset="0%" stop-color="#534AB7"/><stop offset="100%" stop-color="#c4b0f0"/>
     </linearGradient>
-
-    <clipPath id="cp-nodejs"> <rect width="376" height="6" rx="3"/> </clipPath>
-    <clipPath id="cp-python"> <rect width="376" height="6" rx="3"/> </clipPath>
-    <clipPath id="cp-vue">    <rect width="376" height="6" rx="3"/> </clipPath>
-    <clipPath id="cp-react">  <rect width="376" height="6" rx="3"/> </clipPath>
-    <clipPath id="cp-js">     <rect width="376" height="6" rx="3"/> </clipPath>
-    <clipPath id="cp-html">   <rect width="376" height="6" rx="3"/> </clipPath>
   </defs>
-
-  <!-- fundo -->
-  <rect width="740" height="300" rx="10" fill="#12101c"/>
-  <rect width="740" height="300" rx="10" fill="none" stroke="#2e2a45" stroke-width="0.5"/>
-
-  <!-- ── LUA NOVA ── -->
-  <text x="22" y="30" font-size="13" class="fi" style="animation-delay:.1s">🌑</text>
-  <text x="40" y="30" font-family="monospace" font-size="10" fill="#4e4a62" letter-spacing="1.5" class="fi" style="animation-delay:.1s">LUA NOVA</text>
-  <line x1="22" y1="36" x2="578" y2="36" stroke="#1e1b2e" stroke-width="0.5"/>
-
-  <!-- Node.js / SQL -->
-  <text x="22"  y="58" font-size="12" class="fi" style="animation-delay:.18s">🌑</text>
-  <text x="40"  y="58" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.18s">[Node.js / SQL]</text>
-  <rect x="196" y="52" width="376" height="6" rx="3" fill="#1e1b2e"/>
-  <g clip-path="url(#cp-nodejs)" transform="translate(196,52)">
-    <rect class="bar-nodejs" x="0" y="0" width="0" height="6" fill="url(#gNova)" rx="3"/>
-  </g>
-  <circle class="dot dot-nodejs" cx="290" cy="55" r="0" fill="#7F77DD"/>
-  <text x="580" y="59" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.18s">25%</text>
-
-  <!-- Python -->
-  <text x="22"  y="82" font-size="12" class="fi" style="animation-delay:.33s">🌑</text>
-  <text x="40"  y="82" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.33s">[Python]</text>
-  <rect x="196" y="76" width="376" height="6" rx="3" fill="#1e1b2e"/>
-  <g clip-path="url(#cp-python)" transform="translate(196,76)">
-    <rect class="bar-python" x="0" y="0" width="0" height="6" fill="url(#gNova)" rx="3"/>
-  </g>
-  <circle class="dot dot-python" cx="328" cy="79" r="0" fill="#7F77DD"/>
-  <text x="580" y="83" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.33s">35%</text>
-
-  <!-- ── CRESCENTE ── -->
-  <text x="22" y="112" font-size="13" class="fi" style="animation-delay:.46s">🌒</text>
-  <text x="40" y="112" font-family="monospace" font-size="10" fill="#4e4a62" letter-spacing="1.5" class="fi" style="animation-delay:.46s">CRESCENTE</text>
-  <line x1="22" y1="118" x2="578" y2="118" stroke="#1e1b2e" stroke-width="0.5"/>
-
-  <!-- Vue / Vite -->
-  <text x="22"  y="140" font-size="12" class="fi" style="animation-delay:.48s">🌒</text>
-  <text x="40"  y="140" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.48s">[Vue / Vite]</text>
-  <rect x="196" y="134" width="376" height="6" rx="3" fill="#1e1b2e"/>
-  <g clip-path="url(#cp-vue)" transform="translate(196,134)">
-    <rect class="bar-vue" x="0" y="0" width="0" height="6" fill="url(#gCresc)" rx="3"/>
-  </g>
-  <circle class="dot dot-vue" cx="384" cy="137" r="0" fill="#1D9E75"/>
-  <text x="580" y="141" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.48s">50%</text>
-
-  <!-- React -->
-  <text x="22"  y="164" font-size="12" class="fi" style="animation-delay:.63s">🌒</text>
-  <text x="40"  y="164" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.63s">[React]</text>
-  <rect x="196" y="158" width="376" height="6" rx="3" fill="#1e1b2e"/>
-  <g clip-path="url(#cp-react)" transform="translate(196,158)">
-    <rect class="bar-react" x="0" y="0" width="0" height="6" fill="url(#gCresc)" rx="3"/>
-  </g>
-  <circle class="dot dot-react" cx="440" cy="161" r="0" fill="#1D9E75"/>
-  <text x="580" y="165" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.63s">65%</text>
-
-  <!-- JavaScript -->
-  <text x="22"  y="188" font-size="12" class="fi" style="animation-delay:.78s">🌒</text>
-  <text x="40"  y="188" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.78s">[JavaScript]</text>
-  <rect x="196" y="182" width="376" height="6" rx="3" fill="#1e1b2e"/>
-  <g clip-path="url(#cp-js)" transform="translate(196,182)">
-    <rect class="bar-js" x="0" y="0" width="0" height="6" fill="url(#gCresc)" rx="3"/>
-  </g>
-  <circle class="dot dot-js" cx="478" cy="185" r="0" fill="#1D9E75"/>
-  <text x="580" y="189" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.78s">75%</text>
-
-  <!-- ── QUARTO CRESCENTE ── -->
-  <text x="22" y="218" font-size="13" class="fi" style="animation-delay:.91s">🌓</text>
-  <text x="40" y="218" font-family="monospace" font-size="10" fill="#4e4a62" letter-spacing="1.5" class="fi" style="animation-delay:.91s">QUARTO CRESCENTE</text>
-  <line x1="22" y1="224" x2="578" y2="224" stroke="#1e1b2e" stroke-width="0.5"/>
-
-  <!-- HTML / CSS -->
-  <text x="22"  y="246" font-size="12" class="fi" style="animation-delay:.93s">🌓</text>
-  <text x="40"  y="246" font-family="monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:.93s">[HTML / CSS]</text>
-  <rect x="196" y="240" width="376" height="6" rx="3" fill="#1e1b2e"/>
-  <g clip-path="url(#cp-html)" transform="translate(196,240)">
-    <rect class="bar-html" x="0" y="0" width="0" height="6" fill="url(#gQuarto)" rx="3"/>
-  </g>
-  <circle class="dot dot-html" cx="516" cy="243" r="0" fill="#c4b0f0"/>
-  <text x="580" y="247" font-family="monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:.93s">85%</text>
-
-  <!-- rodapé sutil -->
-  <line x1="22" y1="268" x2="578" y2="268" stroke="#1e1b2e" stroke-width="0.5"/>
-  <text x="300" y="286" font-family="monospace" font-size="10" fill="#2e2a45" text-anchor="middle">✦ lua nova — nasce do escuro, cresce para a luz ✦</text>
-</svg>
+  <rect width="740" height="444" rx="10" fill="#12101c"/>
+  <rect x=".25" y=".25" width="739.5" height="443.5" rx="10" fill="none" stroke="#2e2a45" stroke-width=".5"/>
+  <text x="370" y="30" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#a99be0" text-anchor="middle" letter-spacing="0.6" class="fi" style="animation-delay:.05s">✦ O sol simplesmente é o que ele foi feito pra ser ✦</text>
+  <line x1="22" y1="44" x2="718" y2="44" stroke="#1e1b2e" stroke-width="0.5"/>
+  <text x="22" y="62" font-size="13" class="fi" style="animation-delay:0.10s">🌑</text>
+  <text x="40" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="10" fill="#4e4a62" letter-spacing="1.5" class="fi" style="animation-delay:0.10s">LUA NOVA</text>
+  <line x1="22" y1="68" x2="718" y2="68" stroke="#1e1b2e" stroke-width="0.5"/>
+  <text x="22" y="90" font-size="12" class="fi" style="animation-delay:0.22s">🌑</text>
+  <text x="40" y="90" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:0.22s">[Node.js / SQL]</text>
+  <rect x="270" y="84" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b1" x="270" y="84" width="95" height="6" rx="3" fill="url(#gNova)"/>
+  <circle class="dot" style="animation-delay:1.42s" cx="365" cy="87" r="4.5" fill="#7F77DD"/>
+  <text x="700" y="91" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:0.22s">25%</text>
+  <text x="22" y="114" font-size="12" class="fi" style="animation-delay:0.34s">🌑</text>
+  <text x="40" y="114" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:0.34s">[Oracle Cloud]</text>
+  <rect x="270" y="108" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b2" x="270" y="108" width="114" height="6" rx="3" fill="url(#gNova)"/>
+  <circle class="dot" style="animation-delay:1.54s" cx="384" cy="111" r="4.5" fill="#7F77DD"/>
+  <text x="700" y="115" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:0.34s">30%</text>
+  <text x="22" y="138" font-size="12" class="fi" style="animation-delay:0.46s">🌑</text>
+  <text x="40" y="138" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:0.46s">[Django / REST API]</text>
+  <rect x="270" y="132" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b3" x="270" y="132" width="133" height="6" rx="3" fill="url(#gNova)"/>
+  <circle class="dot" style="animation-delay:1.66s" cx="403" cy="135" r="4.5" fill="#7F77DD"/>
+  <text x="700" y="139" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:0.46s">35%</text>
+  <text x="22" y="174" font-size="13" class="fi" style="animation-delay:0.46s">🌒</text>
+  <text x="40" y="174" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="10" fill="#4e4a62" letter-spacing="1.5" class="fi" style="animation-delay:0.46s">CRESCENTE</text>
+  <line x1="22" y1="180" x2="718" y2="180" stroke="#1e1b2e" stroke-width="0.5"/>
+  <text x="22" y="202" font-size="12" class="fi" style="animation-delay:0.58s">🌒</text>
+  <text x="40" y="202" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:0.58s">[Vue / Vite]</text>
+  <rect x="270" y="196" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b4" x="270" y="196" width="190" height="6" rx="3" fill="url(#gCresc)"/>
+  <circle class="dot" style="animation-delay:1.78s" cx="460" cy="199" r="4.5" fill="#1D9E75"/>
+  <text x="700" y="203" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:0.58s">50%</text>
+  <text x="22" y="226" font-size="12" class="fi" style="animation-delay:0.70s">🌒</text>
+  <text x="40" y="226" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:0.70s">[Scikit-learn / TF-IDF]</text>
+  <rect x="270" y="220" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b5" x="270" y="220" width="209" height="6" rx="3" fill="url(#gCresc)"/>
+  <circle class="dot" style="animation-delay:1.90s" cx="479" cy="223" r="4.5" fill="#1D9E75"/>
+  <text x="700" y="227" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:0.70s">55%</text>
+  <text x="22" y="250" font-size="12" class="fi" style="animation-delay:0.82s">🌒</text>
+  <text x="40" y="250" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:0.82s">[Streamlit / Gradio]</text>
+  <rect x="270" y="244" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b6" x="270" y="244" width="228" height="6" rx="3" fill="url(#gCresc)"/>
+  <circle class="dot" style="animation-delay:2.02s" cx="498" cy="247" r="4.5" fill="#1D9E75"/>
+  <text x="700" y="251" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:0.82s">60%</text>
+  <text x="22" y="274" font-size="12" class="fi" style="animation-delay:0.94s">🌒</text>
+  <text x="40" y="274" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:0.94s">[Pandas / NumPy / Matplotlib]</text>
+  <rect x="270" y="268" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b7" x="270" y="268" width="247" height="6" rx="3" fill="url(#gCresc)"/>
+  <circle class="dot" style="animation-delay:2.14s" cx="517" cy="271" r="4.5" fill="#1D9E75"/>
+  <text x="700" y="275" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:0.94s">65%</text>
+  <text x="22" y="298" font-size="12" class="fi" style="animation-delay:1.06s">🌒</text>
+  <text x="40" y="298" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:1.06s">[React]</text>
+  <rect x="270" y="292" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b8" x="270" y="292" width="247" height="6" rx="3" fill="url(#gCresc)"/>
+  <circle class="dot" style="animation-delay:2.26s" cx="517" cy="295" r="4.5" fill="#1D9E75"/>
+  <text x="700" y="299" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:1.06s">65%</text>
+  <text x="22" y="322" font-size="12" class="fi" style="animation-delay:1.18s">🌒</text>
+  <text x="40" y="322" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:1.18s">[JavaScript]</text>
+  <rect x="270" y="316" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b9" x="270" y="316" width="285" height="6" rx="3" fill="url(#gCresc)"/>
+  <circle class="dot" style="animation-delay:2.38s" cx="555" cy="319" r="4.5" fill="#1D9E75"/>
+  <text x="700" y="323" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:1.18s">75%</text>
+  <text x="22" y="358" font-size="13" class="fi" style="animation-delay:1.18s">🌓</text>
+  <text x="40" y="358" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="10" fill="#4e4a62" letter-spacing="1.5" class="fi" style="animation-delay:1.18s">QUARTO CRESCENTE</text>
+  <line x1="22" y1="364" x2="718" y2="364" stroke="#1e1b2e" stroke-width="0.5"/>
+  <text x="22" y="386" font-size="12" class="fi" style="animation-delay:1.30s">🌓</text>
+  <text x="40" y="386" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:1.30s">[Python]</text>
+  <rect x="270" y="380" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b10" x="270" y="380" width="304" height="6" rx="3" fill="url(#gQuarto)"/>
+  <circle class="dot" style="animation-delay:2.50s" cx="574" cy="383" r="4.5" fill="#c4b0f0"/>
+  <text x="700" y="387" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:1.30s">80%</text>
+  <text x="22" y="410" font-size="12" class="fi" style="animation-delay:1.42s">🌓</text>
+  <text x="40" y="410" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b87a0" class="fi" style="animation-delay:1.42s">[HTML / CSS]</text>
+  <rect x="270" y="404" width="380" height="6" rx="3" fill="#1e1b2e"/>
+  <rect class="b11" x="270" y="404" width="323" height="6" rx="3" fill="url(#gQuarto)"/>
+  <circle class="dot" style="animation-delay:2.62s" cx="593" cy="407" r="4.5" fill="#c4b0f0"/>
+  <text x="700" y="411" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#4e4a62" text-anchor="end" class="fi" style="animation-delay:1.42s">85%</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpjNzA1ZGFjNC02NGM5LTQyY2UtODQ4MC03MDQ4YTIxNDA4MzQAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaMUfMJrzoorDF+ZeUlihdgEAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo5Zjg0YzliMS0wOTNkLTQ5OWMtOTdmZS03MGJjODg0NGI2NGVscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoF/S8ERJTTZBMpB4UMgb5UQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgggmTBYFfzVoEkOz7CPTJfATs8DXIbBpZJViLBVAAK3KWkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaAgZjNVUb7pJjwToz4vXRFsAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIO/OCYsy/DwHjJb6zCdAMDNVfrvq+KsG5Luw/7XsLItgZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GS/PZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmM3MDVkYWM0LTY0YzktNDJjZS04NDgwLTcwNDhhMjE0MDgzNC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmFiY2UzYmQ0LTE1YzgtNGU5Zi1iODUyLTgzZmJkMWY5ZThlZHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCCZMFgV/NWgSQ7PsI9Ml8BOzwNchsGlklWIsFUAArcpaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggHLUsH1sBQHA5D2y/9X0Da4ir3+9VbfBE73cD5m/iUkyiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggVlleYxBB1Z/Ao+S+JyxPo8Mk3AodL3XKTdyF58juWVl0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQNG2TuL749KGDruOTuwQQSGTsprnzHQIFySeevJQYMJE6vF7VtymjS3Hf0eHVRovVu/GAfq7X0x5X5aJ+57ZTto=</c2pa:manifest></metadata></svg>
