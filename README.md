@@ -65,10 +65,6 @@ $ _
     <img src="https://img.shields.io/badge/-LinkedIn-e7dfff?style=for-the-badge&logo=linkedin&logoColor=4a2a9a&labelColor=d8ccff" height="35"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/Nyemoon">
-    <img src="https://img.shields.io/badge/-GitHub-e7dfff?style=for-the-badge&logo=github&logoColor=4a2a9a&labelColor=d8ccff" height="35"/>
-  </a>
-  &nbsp;&nbsp;
   <a href="mailto:ketlynbarbosa783@gmail.com">
     <img src="https://img.shields.io/badge/-Gmail-e7dfff?style=for-the-badge&logo=gmail&logoColor=4a2a9a&labelColor=d8ccff" height="35"/>
   </a>
