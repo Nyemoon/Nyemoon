@@ -11,7 +11,9 @@ $ whoami
 ```
 
 ```YAML
-Ketlyn Barbosa · alias: Nyemoon · Técnica em Desenvolvimento de Sistemas
+Ketlyn Barbosa
+alias:      Nyemoon
+
 "O sol simplesmente é o que ele foi feito pra ser"
 ```
 
